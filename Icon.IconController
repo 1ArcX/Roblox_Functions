@@ -1184,7 +1184,7 @@ coroutine.wrap(function()
 			local success, placeInfo = pcall(function() return marketplaceService:GetProductInfo(game.PlaceId) end)
 			if success and placeInfo then
 				local gameName = placeInfo.Name
-				print(("\n\n\n⚽ %s uses TopbarPlus %s\n🍍 TopbarPlus was developed by ForeverHD and the Nanoblox Team\n🚀 You can learn more and take a free copy by searching for 'TopbarPlus' on the DevForum\n\n"):format(gameName, version))
+				--print(("\n\n\n⚽ %s uses TopbarPlus %s\n🍍 TopbarPlus was developed by ForeverHD and the Nanoblox Team\n🚀 You can learn more and take a free copy by searching for 'TopbarPlus' on the DevForum\n\n"):format(gameName, version))
 			end
 		end
 	end
