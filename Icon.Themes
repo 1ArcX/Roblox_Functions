@@ -1,0 +1,6 @@
+-- Require all children and return their references
+local Themes = {}
+Themes['BlueGradient'] = loadstring(game:HttpGet('https://raw.githubusercontent.com/1ArcX/Roblox_Functions/main/Icon.Themes.BlueGradient'))()
+Themes['Default'] = loadstring(game:HttpGet('https://raw.githubusercontent.com/1ArcX/Roblox_Functions/main/Icon.Themes.Default'))()
+
+return Themes
