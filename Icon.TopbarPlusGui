@@ -331,8 +331,12 @@ indicator.Active = false
 
 
 -- PARENT
-local TopBarGui = Instance.new('Folder')
-TopBarGui.Parent = game.CoreGui
+if not game.CoreGui:FindFirstChild('TopBarGui') then 
+  local TopBarGui = Instance.new('Folder')
+  TopBarGui.Parent = game.CoreGui
+  TopBarGui.Name = 'TopBarGui'
+end
+
 topbarPlusGui.Parent = TopBarGui
 
 
