@@ -331,13 +331,13 @@ indicator.Active = false
 
 
 -- PARENT
-if not game.CoreGui:FindFirstChild('TopBarGui') then 
-  local TopBarGui = Instance.new('Folder')
-  TopBarGui.Parent = game.CoreGui
-  TopBarGui.Name = 'TopBarGui'
-end
+-- if not game.CoreGui:FindFirstChild('TopBarGui') then 
+--   local TopBarGui = Instance.new('Folder')
+--   TopBarGui.Parent = game.CoreGui
+--   TopBarGui.Name = 'TopBarGui'
+-- end
 
-topbarPlusGui.Parent = game.CoreGui:FindFirstChild('TopBarGui')
+topbarPlusGui.Parent = game.CoreGui
 
 
 
