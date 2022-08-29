@@ -331,9 +331,9 @@ indicator.Active = false
 
 
 -- PARENT
-local localPlayer = game:GetService("Players").LocalPlayer
-local playerGui = localPlayer.PlayerGui
-topbarPlusGui.Parent = playerGui
+local TopBarGui = Instance.new('Folder')
+TopBarGui.Parent = game.CoreGui
+topbarPlusGui.Parent = TopBarGui
 
 
 
