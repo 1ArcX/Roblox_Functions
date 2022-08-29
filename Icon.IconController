@@ -942,6 +942,7 @@ function IconController.setupHealthbar()
 		runService.Heartbeat:Wait()
 		local Icon = loadstring(game:HttpGet('https://raw.githubusercontent.com/1ArcX/Roblox_Functions/main/Icon'))()
 
+		wait(5)
 		Icon.new()
 			:setProperty("internalIcon", true)
 			:setName("_FakeHealthbar")
