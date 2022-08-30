@@ -2629,7 +2629,7 @@ function IconController.setupHealthbar()
 						local healthInterval = humanoid.Health / humanoid.MaxHealth
 						--print(healthInterval)
 						spawn(function()
-							if healthInterval == 1 or IconController.healthbarDisabled then
+							if healthInterval == 1 or IconController.healthbarDisabled or firstTimeEnabling then
 								if icon.enabled then
 									icon:setEnabled(false)
 								end
@@ -2676,5 +2676,3 @@ end
 
 
 return Icon
-
---cmon
