@@ -594,7 +594,9 @@ local DEFAULT_FORCED_GROUP_VALUES = {}
 local Icon = {}
 Icon.__index = Icon
 
-
+function Icon.IconController()
+	return IconController
+end
 
 -- CONSTRUCTORS
 function Icon.new()
@@ -2676,3 +2678,4 @@ end
 
 
 return Icon
+--zz
