@@ -16,6 +16,7 @@ return {
         deselected = {
             iconGradientColor = ColorSequence.new(selectedColor, selectedColorDarker),
             iconGradientRotation = 90,
+            iconTextColor = Color3.fromRGB(0, 255, 136),
             noticeCircleColor = selectedColor,
             noticeCircleImage = "http://www.roblox.com/asset/?id=4882430005",
             noticeTextColor = neutralColor,
