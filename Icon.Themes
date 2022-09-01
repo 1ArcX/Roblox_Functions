@@ -2,5 +2,7 @@
 local Themes = {}
 Themes['BlueGradient'] = loadstring(game:HttpGet('https://raw.githubusercontent.com/1ArcX/Roblox_Functions/main/Icon.Themes.BlueGradient'))()
 Themes['Default'] = loadstring(game:HttpGet('https://raw.githubusercontent.com/1ArcX/Roblox_Functions/main/Icon.Themes.Default'))()
+Themes['BlueGradient_Green_Text'] = loadstring(game:HttpGet('https://raw.githubusercontent.com/1ArcX/Roblox_Functions/main/Icon.Themes.BlueGradient.GreenText'))()
+Themes['BlueGradient_Red_Text'] = loadstring(game:HttpGet('https://raw.githubusercontent.com/1ArcX/Roblox_Functions/main/Icon.Themes.BlueGradient.RedText'))()
 
 return Themes
