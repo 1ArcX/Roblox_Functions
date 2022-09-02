@@ -2629,15 +2629,18 @@ function IconController.setupHealthbar()
 					local function updateHealthBar()
 						--print('3')
 						local healthInterval = humanoid.Health / humanoid.MaxHealth
+						print(healthinterval)
 						--print(healthInterval)
 						spawn(function()
 							if healthInterval == 1 or IconController.healthbarDisabled or firstTimeEnabling then
 								if icon.enabled then
+									print('a')
 									icon:setEnabled(false)
 								end
 								return
 							elseif healthInterval < 1 then
 								if not icon.enabled then
+									print('b')
 									icon:setEnabled(true)
 								end
 								firstTimeEnabling = false
