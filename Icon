@@ -2526,15 +2526,13 @@ end
 Icon.Destroy = Icon.destroy -- an alias for you maid-using Pascal lovers
 
 function checkHealthVisible(icon, healthInterval, firstTimeEnabling)
-	if healthInterval == 1 or IconController.healthbarDisabled or firstTimeEnabling then
+	if tonumber(healthInterval) == 1 or IconController.healthbarDisabled or firstTimeEnabling then
 		if icon.enabled then
-			print('a')
 			icon:setEnabled(false)
 		end
 		return
-	elseif healthInterval < 1 then
+	elseif tonumber(healthInterval) < 1 then
 		if not icon.enabled then
-			print('b')
 			icon:setEnabled(true)
 		end
 		firstTimeEnabling = false
@@ -2645,7 +2643,6 @@ function IconController.setupHealthbar()
 					local function updateHealthBar()
 						--print('3')
 						local healthInterval = humanoid.Health / humanoid.MaxHealth
-						print(healthInterval)
 						checkHealthVisible(icon, healthInterval, firstTimeEnabling)
 						
 						--print('3.5/2')
@@ -2683,5 +2680,3 @@ end
 
 
 return Icon
-
---ez
