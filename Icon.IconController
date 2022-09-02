@@ -748,7 +748,7 @@ function IconController.setTopbarEnabled(bool, forceBool)
 				0.1,
 				true,
 				function()
-					TopbarPlusGui.TopbarContainer.Visible = false
+					--TopbarPlusGui.TopbarContainer.Visible = false
 				end
 			)
 			indicator.Image = "rbxassetid://5278151556"
@@ -765,7 +765,7 @@ function IconController.setTopbarEnabled(bool, forceBool)
 		if topbarEnabledAccountingForMimic then
 			topbarContainer.Visible = bool
 		else
-			topbarContainer.Visible = false
+			--topbarContainer.Visible = false
 		end
 	end
 end
@@ -869,7 +869,7 @@ function IconController._enableControllerMode(bool)
 	IconController.controllerModeEnabled = bool
 	if bool then
 		TopbarPlusGui.TopbarContainer.Position = UDim2.new(0,0,0,5)
-		TopbarPlusGui.TopbarContainer.Visible = false
+		--TopbarPlusGui.TopbarContainer.Visible = false
 		local scaleMultiplier = getScaleMultiplier()
 		indicator.Position = UDim2.new(0.5,0,0,5)
 		indicator.Size = UDim2.new(0, 18*scaleMultiplier, 0, 18*scaleMultiplier)
